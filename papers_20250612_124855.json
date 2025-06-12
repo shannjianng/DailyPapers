@@ -1,0 +1,184 @@
+[
+  {
+    "title": "DGS-LRM: Real-Time Deformable 3D Gaussian Reconstruction From Monocular\n  Videos",
+    "authors": [
+      "Chieh Hubert Lin",
+      "Zhaoyang Lv",
+      "Songyin Wu",
+      "Zhen Xu",
+      "Thu Nguyen-Phuoc",
+      "Hung-Yu Tseng",
+      "Julian Straub",
+      "Numair Khan",
+      "Lei Xiao",
+      "Ming-Hsuan Yang",
+      "Yuheng Ren",
+      "Richard Newcombe",
+      "Zhao Dong",
+      "Zhengqin Li"
+    ],
+    "abstract": "  We introduce the Deformable Gaussian Splats Large Reconstruction Model\n(DGS-LRM), the first feed-forward method predicting deformable 3D Gaussian\nsplats from a monocular posed video of any dynamic scene. Feed-forward scene\nreconstruction has gained significant attention for its ability to rapidly\ncreate digital replicas of real-world environments. However, most existing\nmodels are limited to static scenes and fail to reconstruct the motion of\nmoving objects. Developing a feed-forward model for dynamic scene\nreconstruction poses significant challenges, including the scarcity of training\ndata and the need for appropriate 3D representations and training paradigms. To\naddress these challenges, we introduce several key technical contributions: an\nenhanced large-scale synthetic dataset with ground-truth multi-view videos and\ndense 3D scene flow supervision; a per-pixel deformable 3D Gaussian\nrepresentation that is easy to learn, supports high-quality dynamic view\nsynthesis, and enables long-range 3D tracking; and a large transformer network\nthat achieves real-time, generalizable dynamic scene reconstruction. Extensive\nqualitative and quantitative experiments demonstrate that DGS-LRM achieves\ndynamic scene reconstruction quality comparable to optimization-based methods,\nwhile significantly outperforming the state-of-the-art predictive dynamic\nreconstruction method on real-world examples. Its predicted physically grounded\n3D deformation is accurate and can readily adapt for long-range 3D tracking\ntasks, achieving performance on par with state-of-the-art monocular video 3D\ntracking methods.\n",
+    "published": "2025-06-11T17:59:58Z",
+    "link": "http://arxiv.org/abs/2506.09997v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09997v1"
+  },
+  {
+    "title": "Flipping Against All Odds: Reducing LLM Coin Flip Bias via Verbalized\n  Rejection Sampling",
+    "authors": [
+      "Tim Z. Xiao",
+      "Johannes Zenn",
+      "Zhen Liu",
+      "Weiyang Liu",
+      "Robert Bamler",
+      "Bernhard Schölkopf"
+    ],
+    "abstract": "  Large language models (LLMs) can often accurately describe probability\ndistributions using natural language, yet they still struggle to generate\nfaithful samples from them. This mismatch limits their use in tasks requiring\nreliable stochasticity, such as Monte Carlo methods, agent-based simulations,\nand randomized decision-making. We investigate this gap between knowledge and\nsampling in the context of Bernoulli distributions. We introduce Verbalized\nRejection Sampling (VRS), a natural-language adaptation of classical rejection\nsampling that prompts the LLM to reason about and accept or reject proposed\nsamples. Despite relying on the same Bernoulli mechanism internally, VRS\nsubstantially reduces sampling bias across models. We provide theoretical\nanalysis showing that, under mild assumptions, VRS improves over direct\nsampling, with gains attributable to both the algorithm and prompt design. More\nbroadly, our results show how classical probabilistic tools can be verbalized\nand embedded into LLM workflows to improve reliability, without requiring\naccess to model internals or heavy prompt engineering.\n",
+    "published": "2025-06-11T17:59:58Z",
+    "link": "http://arxiv.org/abs/2506.09998v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09998v1"
+  },
+  {
+    "title": "Text-Aware Image Restoration with Diffusion Models",
+    "authors": [
+      "Jaewon Min",
+      "Jin Hyeon Kim",
+      "Paul Hyunbin Cho",
+      "Jaeeun Lee",
+      "Jihye Park",
+      "Minkyu Park",
+      "Sangpil Kim",
+      "Hyunhee Park",
+      "Seungryong Kim"
+    ],
+    "abstract": "  Image restoration aims to recover degraded images. However, existing\ndiffusion-based restoration methods, despite great success in natural image\nrestoration, often struggle to faithfully reconstruct textual regions in\ndegraded images. Those methods frequently generate plausible but incorrect\ntext-like patterns, a phenomenon we refer to as text-image hallucination. In\nthis paper, we introduce Text-Aware Image Restoration (TAIR), a novel\nrestoration task that requires the simultaneous recovery of visual contents and\ntextual fidelity. To tackle this task, we present SA-Text, a large-scale\nbenchmark of 100K high-quality scene images densely annotated with diverse and\ncomplex text instances. Furthermore, we propose a multi-task diffusion\nframework, called TeReDiff, that integrates internal features from diffusion\nmodels into a text-spotting module, enabling both components to benefit from\njoint training. This allows for the extraction of rich text representations,\nwhich are utilized as prompts in subsequent denoising steps. Extensive\nexperiments demonstrate that our approach consistently outperforms\nstate-of-the-art restoration methods, achieving significant gains in text\nrecognition accuracy. See our project page: https://cvlab-kaist.github.io/TAIR/\n",
+    "published": "2025-06-11T17:59:46Z",
+    "link": "http://arxiv.org/abs/2506.09993v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09993v1"
+  },
+  {
+    "title": "Multiverse: Your Language Models Secretly Decide How to Parallelize and\n  Merge Generation",
+    "authors": [
+      "Xinyu Yang",
+      "Yuwei An",
+      "Hongyi Liu",
+      "Tianqi Chen",
+      "Beidi Chen"
+    ],
+    "abstract": "  Autoregressive Large Language Models (AR-LLMs) frequently exhibit implicit\nparallelism in sequential generation. Inspired by this, we introduce\nMultiverse, a new generative model that enables natively parallel generation.\nMultiverse internalizes a MapReduce paradigm, generating automatically through\nthree stages: (i) a Map stage for adaptive task decomposition, (ii) a Process\nstage for parallel subtask execution, and (iii) a Reduce stage for lossless\nresult synthesis. Next, we build a real-world Multiverse reasoning model with\nco-design of data, algorithm, and system, enabling rapid and seamless transfer\nfrom frontier AR-LLMs. Starting from sequential reasoning chains, we create\nMultiverse 1K by converting them into structured training data using an\nautomated LLM-assisted pipeline, avoiding costly human annotations.\nAlgorithmically, we design Multiverse Attention to separate parallel reasoning\nsteps while keeping compatibility with causal attention for efficient training.\nSystematically, we implement Multiverse Engine to enable parallel inference. It\nfeatures a dedicated scheduler that dynamically switches between sequential and\nparallel generation, triggered directly by the model. After a 3-hour\nfine-tuning with 1K examples, our Multiverse-32B stands as the only\nopen-sourced non-AR model achieving performance on par with leading AR-LLMs of\nthe same scale, evidenced by AIME24 & 25 scores of 54% and 46%, respectively.\nMoreover, our budget control experiments show that Multiverse-32B exhibits\nsuperior scaling, outperforming AR-LLMs by 1.87% on average using the same\ncontext length. Such scaling further leads to practical efficiency gain,\nachieving up to 2x speedup across varying batch sizes. We have open-sourced the\nentire Multiverse ecosystem, including data, model weights, engine, supporting\ntools, as well as complete data curation prompts and detailed training and\nevaluation recipes.\n",
+    "published": "2025-06-11T17:59:23Z",
+    "link": "http://arxiv.org/abs/2506.09991v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09991v1"
+  },
+  {
+    "title": "Chain-of-Action: Trajectory Autoregressive Modeling for Robotic\n  Manipulation",
+    "authors": [
+      "Wenbo Zhang",
+      "Tianrun Hu",
+      "Yanyuan Qiao",
+      "Hanbo Zhang",
+      "Yuchu Qin",
+      "Yang Li",
+      "Jiajun Liu",
+      "Tao Kong",
+      "Lingqiao Liu",
+      "Xiao Ma"
+    ],
+    "abstract": "  We present Chain-of-Action (CoA), a novel visuo-motor policy paradigm built\nupon Trajectory Autoregressive Modeling. Unlike conventional approaches that\npredict next step action(s) forward, CoA generates an entire trajectory by\nexplicit backward reasoning with task-specific goals through an action-level\nChain-of-Thought (CoT) process. This process is unified within a single\nautoregressive structure: (1) the first token corresponds to a stable keyframe\naction that encodes the task-specific goals; and (2) subsequent action tokens\nare generated autoregressively, conditioned on the initial keyframe and\npreviously predicted actions. This backward action reasoning enforces a\nglobal-to-local structure, allowing each local action to be tightly constrained\nby the final goal. To further realize the action reasoning structure, CoA\nincorporates four complementary designs: continuous action token\nrepresentation; dynamic stopping for variable-length trajectory generation;\nreverse temporal ensemble; and multi-token prediction to balance action chunk\nmodeling with global structure. As a result, CoA gives strong spatial\ngeneralization capabilities while preserving the flexibility and simplicity of\na visuo-motor policy. Empirically, we observe CoA achieves the state-of-the-art\nperformance across 60 RLBench tasks and 8 real-world manipulation tasks.\n",
+    "published": "2025-06-11T17:59:13Z",
+    "link": "http://arxiv.org/abs/2506.09990v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09990v1"
+  },
+  {
+    "title": "EditInspector: A Benchmark for Evaluation of Text-Guided Image Edits",
+    "authors": [
+      "Ron Yosef",
+      "Moran Yanuka",
+      "Yonatan Bitton",
+      "Dani Lischinski"
+    ],
+    "abstract": "  Text-guided image editing, fueled by recent advancements in generative AI, is\nbecoming increasingly widespread. This trend highlights the need for a\ncomprehensive framework to verify text-guided edits and assess their quality.\nTo address this need, we introduce EditInspector, a novel benchmark for\nevaluation of text-guided image edits, based on human annotations collected\nusing an extensive template for edit verification. We leverage EditInspector to\nevaluate the performance of state-of-the-art (SoTA) vision and language models\nin assessing edits across various dimensions, including accuracy, artifact\ndetection, visual quality, seamless integration with the image scene, adherence\nto common sense, and the ability to describe edit-induced changes. Our findings\nindicate that current models struggle to evaluate edits comprehensively and\nfrequently hallucinate when describing the changes. To address these\nchallenges, we propose two novel methods that outperform SoTA models in both\nartifact detection and difference caption generation.\n",
+    "published": "2025-06-11T17:58:25Z",
+    "link": "http://arxiv.org/abs/2506.09988v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09988v1"
+  },
+  {
+    "title": "A Shortcut-aware Video-QA Benchmark for Physical Understanding via\n  Minimal Video Pairs",
+    "authors": [
+      "Benno Krojer",
+      "Mojtaba Komeili",
+      "Candace Ross",
+      "Quentin Garrido",
+      "Koustuv Sinha",
+      "Nicolas Ballas",
+      "Mahmoud Assran"
+    ],
+    "abstract": "  Existing benchmarks for assessing the spatio-temporal understanding and\nreasoning abilities of video language models are susceptible to score inflation\ndue to the presence of shortcut solutions based on superficial visual or\ntextual cues. This paper mitigates the challenges in accurately assessing model\nperformance by introducing the Minimal Video Pairs (MVP) benchmark, a simple\nshortcut-aware video QA benchmark for assessing the physical understanding of\nvideo language models. The benchmark is comprised of 55K high-quality\nmultiple-choice video QA examples focusing on physical world understanding.\nExamples are curated from nine video data sources, spanning first-person\negocentric and exocentric videos, robotic interaction data, and cognitive\nscience intuitive physics benchmarks. To mitigate shortcut solutions that rely\non superficial visual or textual cues and biases, each sample in MVP has a\nminimal-change pair -- a visually similar video accompanied by an identical\nquestion but an opposing answer. To answer a question correctly, a model must\nprovide correct answers for both examples in the minimal-change pair; as such,\nmodels that solely rely on visual or textual biases would achieve below random\nperformance. Human performance on MVP is 92.9\\%, while the best open-source\nstate-of-the-art video-language model achieves 40.2\\% compared to random\nperformance at 25\\%.\n",
+    "published": "2025-06-11T17:57:32Z",
+    "link": "http://arxiv.org/abs/2506.09987v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09987v1"
+  },
+  {
+    "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction\n  and Planning",
+    "authors": [
+      "Mido Assran",
+      "Adrien Bardes",
+      "David Fan",
+      "Quentin Garrido",
+      "Russell Howes",
+      " Mojtaba",
+      " Komeili",
+      "Matthew Muckley",
+      "Ammar Rizvi",
+      "Claire Roberts",
+      "Koustuv Sinha",
+      "Artem Zholus",
+      "Sergio Arnaud",
+      "Abha Gejji",
+      "Ada Martin",
+      "Francois Robert Hogan",
+      "Daniel Dugas",
+      "Piotr Bojanowski",
+      "Vasil Khalidov",
+      "Patrick Labatut",
+      "Francisco Massa",
+      "Marc Szafraniec",
+      "Kapil Krishnakumar",
+      "Yong Li",
+      "Xiaodong Ma",
+      "Sarath Chandar",
+      "Franziska Meier",
+      "Yann LeCun",
+      "Michael Rabbat",
+      "Nicolas Ballas"
+    ],
+    "abstract": "  A major challenge for modern AI is to learn to understand the world and learn\nto act largely by observation. This paper explores a self-supervised approach\nthat combines internet-scale video data with a small amount of interaction data\n(robot trajectories), to develop models capable of understanding, predicting,\nand planning in the physical world. We first pre-train an action-free\njoint-embedding-predictive architecture, V-JEPA 2, on a video and image dataset\ncomprising over 1 million hours of internet video. V-JEPA 2 achieves strong\nperformance on motion understanding (77.3 top-1 accuracy on Something-Something\nv2) and state-of-the-art performance on human action anticipation (39.7\nrecall-at-5 on Epic-Kitchens-100) surpassing previous task-specific models.\nAdditionally, after aligning V-JEPA 2 with a large language model, we\ndemonstrate state-of-the-art performance on multiple video question-answering\ntasks at the 8 billion parameter scale (e.g., 84.0 on PerceptionTest, 76.9 on\nTempCompass). Finally, we show how self-supervised learning can be applied to\nrobotic planning tasks by post-training a latent action-conditioned world\nmodel, V-JEPA 2-AC, using less than 62 hours of unlabeled robot videos from the\nDroid dataset. We deploy V-JEPA 2-AC zero-shot on Franka arms in two different\nlabs and enable picking and placing of objects using planning with image goals.\nNotably, this is achieved without collecting any data from the robots in these\nenvironments, and without any task-specific training or reward. This work\ndemonstrates how self-supervised learning from web-scale data and a small\namount of robot interaction data can yield a world model capable of planning in\nthe physical world.\n",
+    "published": "2025-06-11T17:57:09Z",
+    "link": "http://arxiv.org/abs/2506.09985v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09985v1"
+  },
+  {
+    "title": "Almost-Optimal Local-Search Methods for Sparse Tensor PCA",
+    "authors": [
+      "Max Lovig",
+      "Conor Sheehan",
+      "Konstantinos Tsirkas",
+      "Ilias Zadik"
+    ],
+    "abstract": "  Local-search methods are widely employed in statistical applications, yet\ninterestingly, their theoretical foundations remain rather underexplored,\ncompared to other classes of estimators such as low-degree polynomials and\nspectral methods. Of note, among the few existing results recent studies have\nrevealed a significant \"local-computational\" gap in the context of a\nwell-studied sparse tensor principal component analysis (PCA), where a broad\nclass of local Markov chain methods exhibits a notable underperformance\nrelative to other polynomial-time algorithms. In this work, we propose a series\nof local-search methods that provably \"close\" this gap to the best known\npolynomial-time procedures in multiple regimes of the model, including and\ngoing beyond the previously studied regimes in which the broad family of local\nMarkov chain methods underperforms. Our framework includes: (1) standard greedy\nand randomized greedy algorithms applied to the (regularized) posterior of the\nmodel; and (2) novel random-threshold variants, in which the randomized greedy\nalgorithm accepts a proposed transition if and only if the corresponding change\nin the Hamiltonian exceeds a random Gaussian threshold-rather that if and only\nif it is positive, as is customary. The introduction of the random thresholds\nenables a tight mathematical analysis of the randomized greedy algorithm's\ntrajectory by crucially breaking the dependencies between the iterations, and\ncould be of independent interest to the community.\n",
+    "published": "2025-06-11T17:33:25Z",
+    "link": "http://arxiv.org/abs/2506.09959v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09959v1"
+  },
+  {
+    "title": "Kvasir-VQA-x1: A Multimodal Dataset for Medical Reasoning and Robust\n  MedVQA in Gastrointestinal Endoscopy",
+    "authors": [
+      "Sushant Gautam",
+      "Michael A. Riegler",
+      "Pål Halvorsen"
+    ],
+    "abstract": "  Medical Visual Question Answering (MedVQA) is a promising field for\ndeveloping clinical decision support systems, yet progress is often limited by\nthe available datasets, which can lack clinical complexity and visual\ndiversity. To address these gaps, we introduce Kvasir-VQA-x1, a new,\nlarge-scale dataset for gastrointestinal (GI) endoscopy. Our work significantly\nexpands upon the original Kvasir-VQA by incorporating 159,549 new\nquestion-answer pairs that are designed to test deeper clinical reasoning. We\ndeveloped a systematic method using large language models to generate these\nquestions, which are stratified by complexity to better assess a model's\ninference capabilities. To ensure our dataset prepares models for real-world\nclinical scenarios, we have also introduced a variety of visual augmentations\nthat mimic common imaging artifacts. The dataset is structured to support two\nmain evaluation tracks: one for standard VQA performance and another to test\nmodel robustness against these visual perturbations. By providing a more\nchallenging and clinically relevant benchmark, Kvasir-VQA-x1 aims to accelerate\nthe development of more reliable and effective multimodal AI systems for use in\nclinical settings. The dataset is fully accessible and adheres to FAIR data\nprinciples, making it a valuable resource for the wider research community.\nCode and data: https://github.com/Simula/Kvasir-VQA-x1 and\nhttps://huggingface.co/datasets/SimulaMet/Kvasir-VQA-x1\n",
+    "published": "2025-06-11T17:31:38Z",
+    "link": "http://arxiv.org/abs/2506.09958v1",
+    "pdf_link": "http://arxiv.org/pdf/2506.09958v1"
+  }
+]
