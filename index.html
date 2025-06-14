@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,7 @@
         async function loadPapers() {
             try {
                 // 获取最新的论文JSON文件
-                const response = await fetch('papers/latest.json');
+                const response = await fetch('latest.json');
                 const papers = await response.json();
                 
                 const container = document.getElementById('papers-container');
