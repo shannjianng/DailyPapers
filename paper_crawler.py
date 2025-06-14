@@ -46,12 +46,20 @@ def parse_pubmed_xml(xml_text):
             year = article.Journal.Issue.PubDate.Year
             medline = article.Journal.Issue.PubDate.MedlineDate
             pubdate = year.text if year else (medline.text if medline else "")
+        doi = ""
+        for id_elem in article.find_all("ArticleId"):
+            if id_elem.get("IdType", "").lower() == "doi":
+                doi = id_elem.text.strip()
+                break
+        link = f"https://doi.org/{doi}" if doi else ""
         papers.append({
             "title": title,
             "authors": authors,
             "abstract": abstract,
             "journal": journal,
-            "pubdate": pubdate
+            "pubdate": pubdate,
+            "doi": doi,
+            "link": link
         })
     return papers
 
