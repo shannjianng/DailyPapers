@@ -13,7 +13,9 @@
     ],
     "abstract": "Dynamic positron emission tomography (PET) enables the quantification of physiological parameters of radiotracers employed in the investigation of neuropsychiatric disorders. We previously introduced a factor analysis-based algorithm, Cluster-Initialized Factor Analysis (CIFA), designed to overcome the problem of specifying reference regions. CIFA is capable of automatically extracting distinct radiotracer binding distributions across many modalities based on the differences in tracer dynamics, and thus can distinguish regions of specific- and non-specific binding without requiring prior segmentation.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17902",
+    "link": "https://doi.org/10.1002/mp.17902"
   },
   {
     "title": "Generation of synthetic CT from MRI for MRI-based attenuation correction of brain PET images using radiomics and machine learning.",
@@ -28,7 +30,9 @@
     ],
     "abstract": "Accurate quantitative PET imaging in neurological studies requires proper attenuation correction. MRI-guided attenuation correction in PET/MRI remains challenging owing to the lack of direct relationship between MRI intensities and linear attenuation coefficients.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17867",
+    "link": "https://doi.org/10.1002/mp.17867"
   },
   {
     "title": "Impact of tracer uptake rate on quantification accuracy of myocardial blood flow in PET: A simulation study.",
@@ -43,7 +47,9 @@
     ],
     "abstract": "Cardiac perfusion PET is commonly used to assess ischemia and cardiovascular risk, which enables quantitative measurements of myocardial blood flow (MBF) through kinetic modeling. However, the estimation of kinetic parameters is challenging due to the noisy nature of short dynamic frames and limited sample data points.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17871",
+    "link": "https://doi.org/10.1002/mp.17871"
   },
   {
     "title": "Instantaneous in vivo distal edge verification in intensity-modulated proton therapy by means of PET imaging.",
@@ -57,7 +63,9 @@
     ],
     "abstract": "Intensity-modulated proton therapy (IMPT) holds promise for improving outcomes in head-and-neck cancer (HNC) patients by enhancing organ-at-risk (OAR) sparing. A key challenge in IMPT is ensuring an accurate dose delivery at the distal edge of the tumor, where the steep dose gradients make treatment precision highly sensitive to uncertainties in both proton range and patient setup. Thus, IMPT conformality is increased by incorporating robust margins in the treatment optimization. However, an increment in the plan robustness could lead to an OAR overdosing. Therefore, an accurate distal edge verification during dose delivery is crucial to increase IMPT conformality by reducing optimization settings in treatment planning.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17850",
+    "link": "https://doi.org/10.1002/mp.17850"
   },
   {
     "title": "Modeling inter-reader variability in clinical target volume delineation for soft tissue sarcomas using diffusion model.",
@@ -80,7 +88,9 @@
     ],
     "abstract": "Accurate delineation of the clinical target volume (CTV) is essential in the radiotherapy treatment of soft tissue sarcomas. However, this process is subject to inter-reader variability due to the need for clinical assessment of risk and extent of potential microscopic spread. This can lead to inconsistencies in treatment planning, potentially impacting treatment outcomes. Most existing automatic CTV delineation methods do not account for this variability and can only generate a single CTV for each case.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17865",
+    "link": "https://doi.org/10.1002/mp.17865"
   },
   {
     "title": "Thorax-encompassing multi-modality PET/CT deep learning model for resected lung cancer prognostication: A retrospective, multicenter study.",
@@ -100,7 +110,9 @@
     ],
     "abstract": "Patients with early-stage non-small cell lung cancer (NSCLC) typically receive surgery as their primary form of treatment. However, studies have shown that a high proportion of these patients will experience a recurrence after their resection, leading to an increased risk of death. Cancer staging is currently the gold standard for establishing a patient's prognosis and can help clinicians determine patients who may benefit from additional therapy. However, medical images which are used to help determine the cancer stage, have been shown to hold unutilized prognostic information that can augment clinical data and better identify high-risk NSCLC patients. There remains an unmet need for models to incorporate clinical, pathological, surgical, and imaging information, and extend beyond the current staging system to assist clinicians in identifying patients who could benefit from additional therapy immediately after surgery.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17862",
+    "link": "https://doi.org/10.1002/mp.17862"
   },
   {
     "title": "Evaluation of a motion correction algorithm in lung cancer PET/CT: Phantom validation and patient studies.",
@@ -119,7 +131,9 @@
     ],
     "abstract": "Data-driven gating (DDG) is an emerging technology that can reduce the respiratory motion artifacts in positron emission tomography (PET) images.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17846",
+    "link": "https://doi.org/10.1002/mp.17846"
   },
   {
     "title": "Hepatocellular carcinoma 18F-FDG PET/CT kinetic parameter estimation based on the advantage actor-critic algorithm.",
@@ -134,7 +148,9 @@
     ],
     "abstract": "Kinetic parameters estimated with dynamic 18F-fluorodeoxyglucose (18F-FDG) positron emission tomography (PET)/computed tomography (CT) help characterize hepatocellular carcinoma (HCC), and deep reinforcement learning (DRL) can improve kinetic parameter estimation.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17851",
+    "link": "https://doi.org/10.1002/mp.17851"
   },
   {
     "title": "Predicting [177Lu]Lu-DOTA-TATE dosimetry by using pre-therapy [68Ga]Ga-DOTA-TATE PET/CT and biomarkers in patient with neuroendocrine tumors.",
@@ -151,7 +167,9 @@
     ],
     "abstract": "Lutetium-177 DOTA-TATE peptide receptor radionuclide therapy (PRRT) is an established and effective treatment modality for patients with metastatic neuroendocrine tumors (NETs).",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17852",
+    "link": "https://doi.org/10.1002/mp.17852"
   },
   {
     "title": "Predictive models of epidermal growth factor receptor mutation in lung adenocarcinoma using PET/CT-based radiomics features.",
@@ -166,6 +184,8 @@
     ],
     "abstract": "Lung adenocarcinoma (LAC) comprises a substantial subset of non-small cell lung cancer (NSCLC) diagnoses, where epidermal growth factor receptor (EGFR) mutations play a pivotal role as indicators for therapeutic intervention with targeted agents. The emerging field of radiomics, which involves the extraction of numerous quantitative attributes from medical imaging, when coupled with positron emission tomography/ computed tomography (PET/CT) technology, has demonstrated promise in the prognostication of EGFR mutation status. The objective of this investigation is to construct and validate predictive models for EGFR mutations in LAC by leveraging PET/CT-derived radiomics features, thereby refining diagnostic precision and facilitating tailored treatment strategies.",
     "journal": "Medical physics",
-    "pubdate": ""
+    "pubdate": "",
+    "doi": "10.1002/mp.17780",
+    "link": "https://doi.org/10.1002/mp.17780"
   }
 ]
