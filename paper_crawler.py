@@ -33,7 +33,19 @@ def parse_pubmed_xml(xml_text):
     papers = []
     for article in soup.find_all("PubmedArticle"):
         title = article.ArticleTitle.text if article.ArticleTitle else ""
-        abstract = article.Abstract.AbstractText.text if article.Abstract and article.Abstract.AbstractText else ""
+        abstract = ""
+        if article.Abstract:
+            abstract_texts = article.Abstract.find_all("AbstractText")
+            if abstract_texts:
+                parts = []
+                for ab in abstract_texts:
+                    label = ab.get("Label")
+                    part_text = ab.text.strip()
+                    if label:
+                        parts.append(f"{label}: {part_text}")
+                    else:
+                        parts.append(part_text)
+                abstract = "\n".join(parts)
         authors = []
         for author in article.find_all("Author"):
             lastname = author.LastName.text if author.LastName else ""
