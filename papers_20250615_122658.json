@@ -1,5 +1,43 @@
 [
   {
+    "title": "Simulation and one-ring prototyping of 1-mm-rod-resolution hemispherical brain PET with TOF-DOI detectors.",
+    "authors": [
+      "Kurumi Narita",
+      "Go Akamatsu",
+      "Eiji Yoshida",
+      "Hideaki Tashima",
+      "Yuma Iwao",
+      "Miwako Takahashi",
+      "Taiga Yamaya"
+    ],
+    "abstract": "Brain PET imaging plays crucial roles in research and diagnosis of various brain diseases. To achieve high spatial resolution and high sensitivity, we proposed a hemispherical geometry which offers higher sensitivity with fewer detectors than a conventional cylindrical geometry. Our developed hemispherical brain PET system, Vrain, has indeed achieved a rod resolution of 2.2 mm with a 229 ps time-of-flight (TOF) resolution. To further improve the spatial resolution, we will use TOF and depth-of-interaction (DOI) detectors with our original crosshair light-sharing (CLS) configuration. This study aimed at estimating the performance of the hemispherical brain PET with TOF-DOI detectors and at developing a one-ring PET prototype with 1.6 mm scintillator pitch CLS-based TOF-DOI detectors. &#xD;Approach. The sensitivity, rod resolution, and image quality of the TOF-DOI hemispherical brain PET (TDHBP-sim) and Vrain (Vrain-sim) were estimated using Geant4 simulation. A one-ring prototype with a 30-cm diameter was developed using the CLS-based TOF-DOI detectors. The energy resolution, TOF timing resolution, rod resolution, and the Hoffman brain phantom image quality of the prototype were evaluated.&#xD;Main results. In the simulation study, TDHBP-sim achieved 1.4 times better sensitivity than Vrain-sim. TDHBP-sim visualized 1.0 mm rods and gyri and sulci structures in the brain phantom. In the one-ring experiment, the energy resolution was 11.6% at 511 keV, the TOF timing resolution was 294.6 ps, and 1.0 mm rods were resolved at the central 10-cm-diameter field-of-view. The 0.8-mm-thick radioactivity distribution could be identified in the Hoffman phantom. &#xD;Significance. The study findings suggested that a hemispherical brain PET with 1.6 mm scintillator pitch TOF-DOI detectors should offer excellent performance including 1 mm rod resolution.&#xD.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/ade2b4",
+    "link": "https://doi.org/10.1088/1361-6560/ade2b4"
+  },
+  {
+    "title": "Development of an ultrasensitive small animal PET with 4-layer DOI detectors for sub-second dynamic rodent imaging.",
+    "authors": [
+      "Han Gyu Kang",
+      "Hideaki Tashima",
+      "Hidekatsu Wakizaka",
+      "Go Akamatsu",
+      "Yuma Iwao",
+      "Chie Toramatsu",
+      "Taiga Yamaya"
+    ],
+    "abstract": "Dynamic PET imaging is important for preclinical research since it can visualize the functional information of rodent models as a function of time. However, the temporal resolution of small animal PET imaging has been limited to a scale of seconds due to low sensitivity, and it is not sufficient to capture cardiac or brain function accurately. Here, we present an ultrasensitive small-animal PET scanner with total-body coverage for sub-second dynamic imaging of a rat.&#xD;Methods: The ultrasensitive small animal PET scanner has a 155 mm inner diameter and 325.6 mm axial coverage. The PET scanner has 6 rings, each of which has 10 depth-of-interaction detectors. Each depth-of-interaction detector consists of a 4-layer Zr-doped gadolinium oxyorthosilicate crystal array (2.85 mm pitch, 30 mm total thickness) and 8×8 multi-anode photomultiplier tubes. The physical PET performance was evaluated based on the National Electrical Manufacturers Association NU4 protocol. Sub-second dynamic rat imaging was performed with 18F-FDG tracer. &#xD;Main Results: The peak absolute sensitivity was 20.2% and spatial resolution was 2.6 mm at the center of the field of view with an energy window of 400-600 keV. Total-body images of a rat were obtained with a single bed position. The cardiac function of a rat was visualized with 0.25 s temporal resolution, which was hardly possible with conventional small animal PET scanners. &#xD;Significance: The developed ultrasensitive animal PET enabled sub-second dynamic PET imaging in rodent models with total-body coverage. In conclusion, the ultrasensitive small animal PET scanner can serve as a useful molecular imaging tool for preclinical research with its long axial coverage sub-second temporal resolution.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/ade112",
+    "link": "https://doi.org/10.1088/1361-6560/ade112"
+  },
+  {
     "title": "Physical phantom validation of clustering-initiated factorization in dynamic PET.",
     "authors": [
       "Valerie Kobzarenko",
@@ -18,6 +56,82 @@
     "pubdate": "",
     "doi": "10.1002/mp.17902",
     "link": "https://doi.org/10.1002/mp.17902"
+  },
+  {
+    "title": "Machine learning positioning algorithms for long semi-monolithic scintillator PET detectors.",
+    "authors": [
+      "Samuel Mungai Kinyanjui",
+      "Zhonghua Kuang",
+      "Zheng Liu",
+      "Ning Ren",
+      "Yongfeng Yang"
+    ],
+    "abstract": "Objective.In this work, machine learning positioning algorithms are developed to improve the spatial resolutions of the semi-monolithic scintillator detectors in both monolithic (y) and depth of interaction (z) directions.Approach.Two long semi-monolithic scintillator detectors consisting of 12 lutetium yttrium oxyorthosilicate (LYSO) slabs of 0.96 × 56 × 10 mm3and 14 LYSO slabs of 0.81 × 56 × 10 mm3were manufactured. The scintillator arrays were read out by a 4 × 16 silicon photomultiplier array. 27 × 5 (y, z) positions of each detector were irradiated via a collimated22Na pencil beam. Extreme gradient boosting (XGBoost) machine learning model was used to predict the interaction positions foryandz. The genetic algorithm (GA) or particle swarm optimization (PSO) algorithm was used to optimize hyperparameters for the XGBoost model. The results of the machine learning positioning algorithms were compared to analytical positioning methods.Main results.The GA and PSO algorithms provided similar results. Compared to the analytical methods, the machine learning positioning methods improved bothyandzspatial resolutions especially at both ends of the detectors. The averageyspatial resolutions using the machine learning positioning methods were 0.92 ± 0.41 mm and 0.94 ± 0.44 mm as compared to those obtained with the squared center of gravity method of 1.38 ± 0.23 mm and 1.39 ± 0.25 mm for the two detectors, respectively. The averagezspatial resolutions obtained with the machine learning positioning methods were 1.67 ± 0.41 mm and 1.68 ± 0.45 mm as compared to those obtained with inverse standard deviation method of 2.09 ± 0.82 mm and 2.14 ± 0.81 mm for the two detectors, respectively.Significance.With the machine learning positioning algorithms, the semi-monolithic scintillator detectors with submillimeter slab thickness evaluated in this work provide less than 1 mmyspatial resolution and less than 2 mmzspatial resolution.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/addbbe",
+    "link": "https://doi.org/10.1088/1361-6560/addbbe"
+  },
+  {
+    "title": "Uncertainty quantification for deep learning-based metastatic lesion segmentation on whole body PET/CT.",
+    "authors": [
+      "Brayden Schott",
+      "Victor Santoro-Fernandes",
+      "Žan Klaneček",
+      "Scott Perlman",
+      "Robert Jeraj"
+    ],
+    "abstract": "Objective.Deep learning models are increasingly being implemented for automated medical image analysis to inform patient care. Most models, however, lack uncertainty information, without which the reliability of model outputs cannot be ensured. Several uncertainty quantification (UQ) methods exist to capture model uncertainty. Yet, it is not clear which method is optimal for a given task. The purpose of this work was to investigate several commonly used UQ methods for the critical yet understudied task of metastatic lesion segmentation on whole body PET/CT.Approach.59 whole body68Ga-DOTATATE PET/CT images of patients undergoing theranostic treatment of metastatic neuroendocrine tumors were used in this work. A 3D U-Net was trained for lesion segmentation following five-fold cross validation. Uncertainty measures derived from four UQ methods-probability entropy, Monte Carlo dropout, deep ensembles, and test time augmentation-were investigated. Each uncertainty measure was assessed across four quantitative evaluations: (1) its ability to detect artificially degraded image data at low, medium, and high degradation magnitudes; (2) to detect false-positive (FP) predicted regions; (3) to recover false-negative (FN) predicted regions; and (4) to establish correlations with model biomarker extraction and segmentation performance metrics.Mainresults.Test time augmentation and probability entropy respectively achieved the highest and lowest degraded image detection at low (AUC = 0.54 vs. 0.68), medium (AUC = 0.70 vs. 0.82), and high (AUC = 0.83 vs. 0.90) degradation magnitudes. For detecting FPs, all UQ methods achieve strong performance, with AUC values ranging narrowly between 0.77 and 0.81. FN region recovery performance was strongest for test time augmentation and weakest for probability entropy. Performance for the correlation analysis was mixed, where the strongest performance was achieved by test time augmentation for SUVtotalcapture (ρ= 0.57) and segmentation Dice coefficient (ρ= 0.72), by Monte Carlo dropout for SUVmeancapture (ρ= 0.35), and by probability entropy for segmentation cross entropy (ρ= 0.96).Significance.Overall, test time augmentation demonstrated superior UQ performance and is recommended for use in metastatic lesion segmentation task. It also offers the advantage of being post hoc and computationally efficient. In contrast, probability entropy performed the worst, highlighting the need for advanced UQ approaches for this task.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/add9df",
+    "link": "https://doi.org/10.1088/1361-6560/add9df"
+  },
+  {
+    "title": "Predicting and monitoring response to head and neck cancer radiotherapy using multimodality imaging and radiobiological digital twin simulations.",
+    "authors": [
+      "Eric Aliotta",
+      "Jeho Jeong",
+      "Ramesh Paudyal",
+      "Milan Grkovski",
+      "Bill Diplas",
+      "James Han",
+      "Vaios Hatzoglou",
+      "Michalis Aristophanous",
+      "Nadeem Riaz",
+      "Heiko Schöder",
+      "Nancy Y Lee",
+      "Amita Shukla-Dave",
+      "Joseph O Deasy"
+    ],
+    "abstract": "Objective.To predict radiotherapy treatment response for head and neck cancer (HNC) using multimodality imaging and personalized radiobiological modeling.Approach.A mechanistic radiobiological model was combined with multi-modality imaging data from diffusion weighted-magnetic resonance imaging and positron emission tomography scans with [18F]Fluorodeoxyglucose (FDG) and [18F]Fluoromisonidazole (FMISO) tracers to develop personalized treatment response models for human papilloma virus associated HNC patients undergoing chemo-radiotherapy. Models were initialized to incorporate patient-specific imaging and updated to reflect longitudinal measurements of nodal gross tumor volume throughout treatment. Prediction accuracy was assessed based on mean absolute error (MAE) of weekly volume predictions and in predicting locoregional recurrence (LRR) following treatment.Main results.Personalized modeling based on pretreatment imaging significantly improved longitudinal volume prediction accuracy and correlation with measurement compared with a generic population model (MAE = 23.4 ± 10.0% vs 24.9 ± 9.0%,p= 0.002 on pairedt-test,R= 0.82 vs 0.72). Adding volume measurements from weeks 1 and 2 further improved prediction accuracy for subsequent weeks (MAE = 12.5 ± 8.1%, 10.7 ± 9.9%). When incorporating feedback with longitudinal measurements, penalizing large deviations from pretreatment model parameters using a variational regularization method was necessary to maintain model stability. Model-predicted volumes based on baseline + week-1 information significantly improved LRR prediction compared with week-1 volume data alone (area under the curve, AUC = 0.83 vs 0.77,p= 0.03) and was similar to prediction using week-3 volume data (AUC = 0.83 vs 0.85,p= non-significant).Significance.The proposed approach, which integrates clinical imaging and radiobiological principles, could be a basis to guide pretreatment prescription personalization as well as on-treatment adaptations.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/add9de",
+    "link": "https://doi.org/10.1088/1361-6560/add9de"
+  },
+  {
+    "title": "Whole-body CT-to-PET synthesis using a customized transformer-enhanced GAN.",
+    "authors": [
+      "Bangyan Xu",
+      "Ziwei Nie",
+      "Jian He",
+      "Aimei Li",
+      "Ting Wu"
+    ],
+    "abstract": "Background. Positron emission tomography with 2-deoxy-2-[fluorine-18]fluoro-D-glucose integrated with computed tomography (18F-FDG PET-CT) is a multi-modality medical imaging technique widely used for screening and diagnosis of lesions and tumors, in which, CT can provide detailed anatomical structures, while PET can show metabolic activities. Nevertheless, it has disadvantages such as long scanning time, high cost, and relatively high radiation doses.Purpose. We propose a deep learning model for the whole-body CT-to-PET synthesis task, generating high-quality synthetic PET images that are comparable to real ones in both clinical relevance and diagnostic value.Material. We collect 102 pairs of 3D CT and PET scans, which are sliced into 27 240 pairs of 2D CT and PET images (training: 21,855 pairs, validation: 2810 pairs, testing: 2575 pairs).Methods. We propose a transformer-enhanced generative adversarial network (GAN) for whole-body CT-to-PET synthesis task. The CPGAN model uses residual blocks and fully connected transformer residual blocks to capture both local features and global contextual information. A customized loss function incorporating structural consistency is designed to improve the quality of synthesized PET images.Results. Both quantitative and qualitative evaluation results demonstrate effectiveness of the CPGAN model. The mean and standard variance of NRMSE, PSNR and SSIM values on test set are(16.90±12.27)×10-4,28.71±2.67and0.926±0.033, respectively, outperforming other seven state-of-the-art models. Three radiologists independently and blindly evaluated and gave subjective scores to 100 randomly chosen PET images (50 real and 50 synthetic). By Wilcoxon signed rank test, there are no statistical differences between the synthetic PET images and the real ones.Conclusions. Despite the inherent limitations of CT images to directly reflect biological information of metabolic tissues, CPGAN model effectively synthesizes satisfying PET images from CT scans, which has potential in reducing the reliance on actual PET-CT scans.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/add8dd",
+    "link": "https://doi.org/10.1088/1361-6560/add8dd"
   },
   {
     "title": "Generation of synthetic CT from MRI for MRI-based attenuation correction of brain PET images using radiomics and machine learning.",
@@ -56,6 +170,44 @@
     "pubdate": "",
     "doi": "10.1002/mp.17871",
     "link": "https://doi.org/10.1002/mp.17871"
+  },
+  {
+    "title": "Exploiting network optimization stability for enhanced PET image denoising using deep image prior.",
+    "authors": [
+      "Fumio Hashimoto",
+      "Kibo Ote",
+      "Yuya Onishi",
+      "Hideaki Tashima",
+      "Go Akamatsu",
+      "Yuma Iwao",
+      "Miwako Takahashi",
+      "Taiga Yamaya"
+    ],
+    "abstract": "Objective. Positron emission tomography (PET) is affected by statistical noise due to constraints on tracer dose and scan duration, impacting both diagnostic performance and quantitative accuracy. While deep learning-based PET denoising methods have been used to improve image quality, they may introduce over-smoothing, which can obscure critical structural details and compromise quantitative accuracy. We propose a method for making a deep learning solution more reliable and apply it to the conditional deep image prior (DIP).Approach. We introduce the idea ofstability informationin the optimization process of conditional DIP, enabling the identification of unstable regions within the network's optimization trajectory. Our method incorporates a stability map, which is derived from multiple intermediate outputs of a moderate neural network at different optimization steps. The final denoised PET image is then obtained by computing a linear combination of the DIP output and the original reconstructed PET image, weighted by the stability map.Main results. We employed eight high-resolution brain PET datasets for comparison. Our method effectively reduces background noise while preserving small structure details in brain [18F]FDG PET images. Comparative analysis demonstrated that our approach outperformed existing methods in terms of peak-to-valley ratio and background noise suppression across various low-dose levels. Additionally, region-of-interest analysis confirmed that the proposed method maintains quantitative accuracy without introducing under- or over-estimation. Furthermore, we applied our method to full-dose PET data to assess its impact on image quality. The results revealed that the proposed method significantly reduced background noise while preserving the peak-to-valley ratio at a level comparable to that of unfiltered full-dose PET images.Significance. The proposed method introduces a robust approach to deep learning-based PET denoising, enhancing its reliability and preserving quantitative accuracy. Furthermore, this strategy can potentially advance performance in high-sensitivity PET scanners and surpass the limit of image quality inherent to PET scanners.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/add63f",
+    "link": "https://doi.org/10.1088/1361-6560/add63f"
+  },
+  {
+    "title": "Patient CT-based simulation study of secondary-electron-bremsstrahlung imaging for range verification in proton therapy: comparison with prompt gamma and PET imaging for simplified proton pencil beam and SOBP irradiation scenarios.",
+    "authors": [
+      "Takuya Yabe",
+      "Munetaka Nitta",
+      "Mitsutaka Yamaguchi",
+      "Marco Pinto",
+      "Naoki Kawachi",
+      "Katia Parodi"
+    ],
+    "abstract": "Objective.Secondary electron bremsstrahlung (SEB) imaging, along with prompt gamma (PG) and positron emission tomography (PET) imaging, has been proposed as anin vivorange verification tool for proton therapy. This study presents the first simulation based on patient computed tomography (CT) data to investigate the feasibility of SEB imaging for range verification in proton therapy, while comparing the characteristics of SEB imaging with those of PG and PET imaging.Approach.A Monte Carlo simulation was performed using patient CT data for the irradiation of monoenergetic pencil beams and spread-out Bragg peak proton beams. The physical characteristics of SEB imaging were analyzed at three different anatomical sites and compared with those of PG and PET imaging.Main results. In all the treatment cases, SEB imaging exhibited higher production rates than PG and PET imaging, particularly in the regions with high CT values along the beam path. Although the SEB signal was more affected by scattering and absorption than the PET or PG signals, sufficient statistical counts for range verification (∼3 × 10-3SEBs/proton) could potentially be detected outside the patient geometry. For pencil beam cases, the SEB and PET fall-offs were located 4-5 mm proximal to the dose fall-off, while the PG fall-off was located 0-1 mm distal to it.Significance.Results suggest that SEB imaging has the potential to offer a real-time range verification tool (by comparing measured and expected images), particularly for treating shallow-seated tumors using proton pencil-beam scanning delivery. Thus, this study represents a significant step towards the clinical application of range verification based on SEB imaging and promotes future efforts in this direction.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/add4b7",
+    "link": "https://doi.org/10.1088/1361-6560/add4b7"
   },
   {
     "title": "Instantaneous in vivo distal edge verification in intensity-modulated proton therapy by means of PET imaging.",
@@ -190,6 +342,23 @@
     "link": "https://doi.org/10.1002/mp.17852"
   },
   {
+    "title": "Depth-of-interaction encoding techniques for pixelated PET detectors enabled by machine learning methods and fast waveform digitization.",
+    "authors": [
+      "Bing Dai",
+      "Srilalan Krishnamoorthy",
+      "Emmanuel Morales",
+      "Suleman Surti",
+      "Joel S Karp"
+    ],
+    "abstract": "Objective. Pixelated detectors with single-ended readout are routinely used by commercial positron emission tomography scanners owing to their good energy and timing resolution and optimized manufacturing, but they typically do not provide depth-of-interaction (DOI) information, which can help improve the performance of systems with higher resolution and smaller ring diameter. This work aims to develop a technique for multi-level DOI classification that does not require modifications to the detector designs.Approach. We leveraged high-speed (5 Gs s-1) waveform sampling electronics with the Domino Ring Sampler (DRS4) and machine learning (ML) methods to extract DOI information from the entire scintillation waveforms of pixelated crystals. We evaluated different grouping schemes for multi-level DOI classification by analyzing the DOI positioning profile and DOI positioning error. We examined trade-offs among crystal configurations, detector timing performance, and DOI classification accuracy. We also investigated the impact of different ML algorithms and input features-extracted from scintillation waveforms-on model accuracy.Main results. The DOI positioning profile and positioning error suggest that 2- or 3-level binning was effective for 20 mm long crystals. 2-level discrete DOI models achieved 95% class-wise accuracy and 83% overall accuracy in positioning events into the correct DOI level and 3-level up to 90% class-wise accuracy for long and narrow crystals (2 × 2 × 20 mm3). Long short-term memory networks trained with time-frequency moments were twice as efficient in training time while maintaining equal or better accuracy compared to those trained with waveforms. Classical ML algorithms exhibit comparable accuracy while consuming one order less training time than deep learning models.Significance. This work demonstrates a proof-of-concept approach for obtaining DOI information from commercially available pixelated detectors without altering the detector design thereby avoiding potential degradation in detector timing performance. It provides an alternative solution for multi-level DOI classification, potentially inspiring future scanner designs.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Physics in medicine and biology",
+    "pubdate": "",
+    "doi": "10.1088/1361-6560/adc96d",
+    "link": "https://doi.org/10.1088/1361-6560/adc96d"
+  },
+  {
     "title": "Predictive models of epidermal growth factor receptor mutation in lung adenocarcinoma using PET/CT-based radiomics features.",
     "authors": [
       "Zhikang Deng",
@@ -207,5 +376,21 @@
     "pubdate": "",
     "doi": "10.1002/mp.17780",
     "link": "https://doi.org/10.1002/mp.17780"
+  },
+  {
+    "title": "Hybrid method for estimating lung ventilation from CT by combining intensity and motion information.",
+    "authors": [
+      "Paris Tzitzimpasis",
+      "Mario Ries",
+      "Bas W Raaymakers",
+      "Cornel Zachiu"
+    ],
+    "abstract": "BACKGROUND: Functional lung imaging modalities allow for capturing regional lung ventilation information. Computed Tomography based ventilation imaging (CTVI) has been proposed as a surrogate modality that relies on time-resolved anatomical data and image processing. However, generating accurate ventilation maps using solely computed tomography (CT) image information remains a challenging task, due to the need to derive functional information of ventilation from anatomical observations.\nPURPOSE: We introduce the hybrid estimation of computed tomography obtained respiratory function (HECTOR) method that consists of two components: a volume- and a density-based ventilation estimate. For the first component, a deformable image registration (DIR)-based solution for accurate volumetric CTVI generation is proposed, integrating the physical characteristics of the lung deformations in its design. For the second component, an already established air-tissue density model is used. Furthermore, a novel method is developed for combining the two components.\nMETHODS: The proposed method consists of four principal steps: (1) Application of a specially tailored DIR algorithm to estimate respiratory motion between inhale and exhale phases. (2) Conversion of the motion information to volumetric change maps using a variation of the Jacobian determinant method. (3) Computation of a HU-based method that estimates the local product of air-tissue densities. (4) Combination of the metrics estimated in steps 2 and 3 by means of a smooth minimum function. The proposed approach is validated using the publicly available VAMPIRE dataset consisting of two subgroups: 25 subjects scanned with Galligas 4DPET/CT and 21 subjects scanned with DTPA-SPECT. Another dataset of 18 patients available at The Cancer Imaging Archive (TCIA) was used for further validation. All datasets contain inhale/exhale CT scans paired with ground-truth ventilation images (RefVIs). The CTVIs generated by the proposed HECTOR method were tested against the RefVIs using the Spearman correlation coefficient and Dice overlap of low- and high-function lung (DSC-low and DSC-high, respectively).\nRESULTS: The proposed method achieved mean Spearman, DSC-high and DSC-low coefficients of 0.62, 0.55, and 0.59 on the Galligas PET subgroup and 0.49,0,48, and 0.50 on the DTPA-SPECT subgroup of the VAMPIRE dataset. This performance was better than the highest performing method reported in the original challenge. The same metrics for the TCIA dataset were 0.66, 0.60, and 0.60. The proposed hybrid ventilation method achieved higher Spearman correlation scores than the individual volume- and density-based components in all datasets. Additionally, the use of the specially tailored DIR algorithm was found to achieve higher scores than previously reported volume-based methods.\nCONCLUSIONS: Our work provides a novel processing workflow for CT ventilation imaging that can consistently generate ventilation maps with high fidelity compared to reference approaches. This study also provides further insights into the benefits of combining different types of information to model the complex dynamics of respiratory function. Such information can be useful for potential applications in radiation therapy treatment planning and thoracic dose-response assessment.",
+    "abstract_zh": "",
+    "summary_zh": "",
+    "journal": "Medical physics",
+    "pubdate": "",
+    "doi": "10.1002/mp.17787",
+    "link": "https://doi.org/10.1002/mp.17787"
   }
 ]
