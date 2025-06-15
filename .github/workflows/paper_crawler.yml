@@ -24,6 +24,7 @@ jobs:
     
     - name: Run paper crawler
       env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         SEARCH_KEYWORDS: ${{ secrets.SEARCH_KEYWORDS }}
         JOURNAL_NAME: ${{ secrets.JOURNAL_NAME }}
       run: python paper_crawler.py
