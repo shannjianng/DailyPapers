@@ -1,9 +1,12 @@
 name: Paper Crawler
 
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'  # 每天运行一次
+#   workflow_dispatch:  # 允许手动触发
+
 on:
-  schedule:
-    - cron: '0 0 * * *'  # 每天运行一次
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:  # 只允许手动触发 20250702
 
 jobs:
   crawl-papers:
